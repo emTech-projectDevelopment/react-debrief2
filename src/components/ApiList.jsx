@@ -26,7 +26,7 @@ export default function UsingApi() {
       <div className='outputField'>
         {items.map((item, index) => {
           return (
-            <User user={item} />
+            <User key={index} user={item} />
           )
         })}
       </div>
