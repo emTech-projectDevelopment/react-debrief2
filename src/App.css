@@ -2,6 +2,16 @@
   text-align: center;
 }
 
+h2, h3, h4 {
+  margin: 0;
+}
+
+p {
+  text-align: left;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +45,84 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.bodyCont {
+  width: 100%;
+  height: 100%;
+  min-height: auto;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  background: pink;
+}
+
+.btnDiv {
+  width: 50%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+  transform: scale(1.2);
+}
+
+.resourceBtn {
+  padding: 2px 3px;
+  text-shadow: 1px 1px white;
+  font-variant: small-caps;
+  transition: 500ms;
+}
+
+.resourceBtn:hover {
+  transform: scale(1.15);
+  color: rgba(0, 128, 0, 0.913);
+  font-weight: bolder;
+  outline: none;
+}
+
+.resourceHeading {
+  text-transform: capitalize;
+  text-shadow: 2px 2px #61DAFB;
+}
+
+.preField {
+  width: 98%;
+  height: 100%;
+  margin: 5px auto;
+  padding: 2px;
+  overflow: scroll;
+  color: rgba(255, 255, 255, 0.6);
+  background: rgba(0, 128, 0, 0.618);
+  font-size: small;
+  border: 1px solid white;
+  border-radius: 6px;
+  scroll-behavior: smooth;
+}
+
+.preField:hover {
+  transition: 1s;
+  color: black;
+  background: white;
+  font-size: large;
+  font-weight: 500;
+  box-shadow: 0px 0px 5px 10px rgba(255, 255, 255, 1);
+}
+
+.outputField {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.user-card {
+  color: black;
+  padding: 12px;
+  box-shadow: #282c34 0px 0px 2px 2px;
+}
+
+.user-card:hover {
+  color: white;
+  transform: scale(1.05);
+
 }
